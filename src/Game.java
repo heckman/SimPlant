@@ -18,6 +18,7 @@ class Game {
   }
 
   // all threads enter through here
+  // therefore this is the only method that needs to be synchronized
   synchronized String processCommand(String rawCommand) {
     String command = (rawCommand + "   ").substring(0, 3).toLowerCase();
     switch ( gameState ) {
