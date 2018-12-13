@@ -10,7 +10,12 @@ class Plant {
 //  private static final int STEP_SECONDS = 60 * 60 * 24; // one day
 //  private static final int STEP_SECONDS = 3; // for testing
 //  private static final int STEP_SECONDS = 8; // for presentation
-  private static final long STEP_NANOS = 12857142857L; // for presentation - 90 seconds = 1 week
+
+  // for presentation...
+//  private static final long STEP_NANOS = 8571428571L; // 60 seconds = 1 week
+  private static final long STEP_NANOS = 12857142857L; // 90 seconds = 1 week
+//  private static final long STEP_NANOS = 17142857142L; // 120 seconds = 1 week
+
   static final String STEP_STRING = "day";
 
   private Instant born;
