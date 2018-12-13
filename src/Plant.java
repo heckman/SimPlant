@@ -7,9 +7,10 @@ import java.util.stream.Collectors;
 
 class Plant {
 
-  //  private static final int STEP_SECONDS = 60 * 60 * 24; // one day
-  //private static final int STEP_SECONDS = 3; // for testing
-  private static final int STEP_SECONDS = 8; // for presentation
+//  private static final int STEP_SECONDS = 60 * 60 * 24; // one day
+//  private static final int STEP_SECONDS = 3; // for testing
+//  private static final int STEP_SECONDS = 8; // for presentation
+  private static final long STEP_NANOS = 7500000000L; // for presentation
   static final String STEP_STRING = "day";
 
   private Instant born;
@@ -52,7 +53,8 @@ class Plant {
 
   private void update() {
     long nanosOld = Duration.between(born, Instant.now()).toNanos();
-    long stepsOld = (nanosOld / 1000000000) / STEP_SECONDS;
+//    long stepsOld = (nanosOld / 1000000000) / STEP_SECONDS;
+    long stepsOld = nanosOld / STEP_NANOS;
     while ( lastUpdated < stepsOld && !isDead() ) {
       step();
       lastUpdated++;
