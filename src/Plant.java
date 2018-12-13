@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 class Plant {
 
   //  private static final int STEP_SECONDS = 60 * 60 * 24; // one day
-  private static final int STEP_SECONDS = 3; // for testing
+  private static final int STEP_SECONDS = 20; // for testing
   static final String STEP_STRING = "day";
 
   private Instant born;
@@ -111,11 +111,14 @@ class Plant {
   }
 
   private String getDebugStatus() {
-    // return "";
-    return trackerMap.values().stream()
+     return "";
+/*
+     return trackerMap.values().stream()
                .map(TrackerInterface::getLevelCode)
                .filter(Objects::nonNull)
                .map(String::trim)
                .collect(Collectors.joining(",", "[", "] "));
+*/
+
   }
 }
