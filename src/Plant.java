@@ -8,7 +8,8 @@ import java.util.stream.Collectors;
 class Plant {
 
   //  private static final int STEP_SECONDS = 60 * 60 * 24; // one day
-  private static final int STEP_SECONDS = 20; // for testing
+  //private static final int STEP_SECONDS = 3; // for testing
+  private static final int STEP_SECONDS = 8; // for presentation
   static final String STEP_STRING = "day";
 
   private Instant born;
