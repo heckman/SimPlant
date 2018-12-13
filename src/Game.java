@@ -166,7 +166,7 @@ class Game {
     int age = plant.getAge();
     if ( age < oldestPlant )
       return "Your oldest plant was "
-             + Plant.ageString(oldestPlant)
+             + Plant.ageString(oldestPlant) + ". "
              + askNew();
     //  age >= oldestPlant
     oldestPlant = age;
