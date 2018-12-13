@@ -3,8 +3,10 @@ public enum PlantAction {
   WATER("Water applied. "),
   FEED("Fertilizer applied. "),
   SPRAY("Pesticides applied. "),
+
+  // these next two "actions" should never happen
   BLOOM("You have somehow made your plant bloom. "), // This shouldn't happen.
-  CAT("The cat came by.");
+  CAT("You have somehow made a cat come by. "); // This shouldn't happen.
 
   private String feedback;
 

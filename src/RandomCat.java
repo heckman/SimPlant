@@ -13,9 +13,9 @@ public class RandomCat implements TrackerInterface {
 	 * Comments appended to status message. One is chosen at random.
 	 */
 	private static final String[] COMMENTS = {
-			"Your cat peed in your plant! ",
-			"Your cat knocked down your plant. ",
-			"Your cat has nibbled on your plant. "
+			"A cat peed in your plant! ",
+			"A cat knocked down your plant. ",
+			"A cat has nibbled on your plant. "
 	};
 
 	RandomCat (Plant plant) {
