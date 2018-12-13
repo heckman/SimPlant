@@ -26,7 +26,7 @@ class Plant {
     trackerMap.put(PlantAction.FEED, new FeedTracker());
     trackerMap.put(PlantAction.SPRAY, new BugTracker());
     trackerMap.put(PlantAction.BLOOM, new BloomTracker(this));
-    trackerMap.put(PlantAction.CAT, new RandomCat(this));
+//    trackerMap.put(PlantAction.CAT, new RandomCat(this));
   }
 
   String action(PlantAction action) {
