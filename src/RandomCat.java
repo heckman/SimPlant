@@ -5,7 +5,7 @@ public class RandomCat implements TrackerInterface {
 	//	chance of random cat action
 	private static final Double RANDOM_CAT = 0.05;
 
-	private final Plant plant;
+//	private final Plant plant;
 	private Random random = new Random();
 	private boolean catAction;
 
@@ -19,7 +19,7 @@ public class RandomCat implements TrackerInterface {
 	};
 
 	RandomCat (Plant plant) {
-		this.plant = plant;
+//		this.plant = plant;
 		catAction = false;
 	}
 
